@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "clean": "rimraf dist",
-    "lint": "eslint 'src/**/*.{js,ts}?(x)' --fix",
+    "lint": "eslint \"src/**/*.{js,ts}?(x)\" --fix",
     "build": "ncc build src/index.ts --minify --v8-cache",
     "prebuild": "run-s lint clean",
     "prepare": "is-ci || husky install .husky"

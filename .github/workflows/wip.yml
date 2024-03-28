@@ -18,6 +18,7 @@ jobs:
           yarn
       - name: 📦　Build
         run: |
+          export NODE_OPTIONS=--openssl-legacy-provider
           yarn build
       - uses: ./
         with:
