@@ -32,6 +32,7 @@
     "import/extensions": 0,
     "import/no-unresolved": 0,
     "no-param-reassign": [2, { "props": false }],
+    "import/prefer-default-export": "off",
     "@typescript-eslint/no-namespace": 0,
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/explicit-module-boundary-types": 0,
