@@ -23,7 +23,7 @@ export namespace Util {
     const keywords = core
       .getInput('keywords')
       .split(separator)
-      .map((keyword) => keyword.trim().toLowerCase())
+      .map((keyword) => keyword.trim().toLowerCase().replaceAll("'", ''))
       .filter((keyword) => keyword.length > 0)
     return keywords.length > 0 ? keywords : [...presets]
   }
