@@ -18,7 +18,9 @@ jobs:
         run: yarn install
 
       - name: 📦　Build
-        run: yarn build
+        run: |
+         export NODE_OPTIONS=--openssl-legacy-provider
+         yarn build
 
       - name: 🔑　Generate Token
         uses: wow-actions/use-app-token@v1
