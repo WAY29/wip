@@ -14,7 +14,7 @@ export namespace Util {
     const labels = core
       .getInput('labels')
       .split(separator)
-      .map((label) => label.trim().toLowerCase())
+      .map((label) => label.trim().toLowerCase().replaceAll("'", ''))
       .filter((label) => label.length > 0)
     return labels.length > 0 ? labels : [...presets]
   }
