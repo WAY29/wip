@@ -11,7 +11,7 @@ By default, this action is setting a pull request commits state to pending if it
 - do-not-merge
 - 🚧
 
-![screenshot](https://github.com/wow-actions/wip/blob/master/screenshot.jpg?raw=true)
+![screenshot](https://github.com/WAY29/wip/blob/master/screenshot.jpg?raw=true)
 
 ## Usage
 
@@ -33,7 +33,7 @@ jobs:
   WIP:
     runs-on: ubuntu-latest
     steps:
-      - uses: wow-actions/wip@v1
+      - uses: WAY29/wip@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -41,10 +41,10 @@ jobs:
           setFailed: false
 
           # Match with PR labels. Comma separated and case insensitive labels.
-          labels: 'do-not-merge', 'work in progress', 'wip', 'rfc', '🚧'
+          labels: "'do-not-merge', 'work in progress', 'wip', 'rfc', '🚧'"
 
           # Match with PR title. Comma separated and case insensitive keywords.
-          keywords: 'do-not-merge', 'work in progress', 'wip', 'rfc', '🚧'
+          keywords: "'do-not-merge', 'work in progress', 'wip', 'rfc', '🚧'"
 
           # A string label to differentiate this status from the status of
           # other systems. This field is case-insensitive.
