@@ -14,7 +14,7 @@
     "experimentalDecorators": true,
     "outDir": "lib",
     "target": "es5",
-    "lib": ["dom", "es2015"]
+    "lib": ["dom", "es2021"]
   },
   "include": ["src/**/*.ts"]
 }
