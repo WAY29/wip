@@ -41,10 +41,10 @@ jobs:
           setFailed: false
 
           # Match with PR labels. Comma separated and case insensitive labels.
-          labels: "'do-not-merge', 'work in progress', 'wip', 'rfc', '🚧'"
+          labels: 'do-not-merge', 'work in progress', 'wip', 'rfc', '🚧'
 
           # Match with PR title. Comma separated and case insensitive keywords.
-          keywords: "'do-not-merge', 'work in progress', 'wip', 'rfc', '🚧'"
+          keywords: 'do-not-merge', 'work in progress', 'wip', 'rfc', '🚧'
 
           # A string label to differentiate this status from the status of
           # other systems. This field is case-insensitive.
