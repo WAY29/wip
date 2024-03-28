@@ -25,6 +25,8 @@ export namespace Action {
         const blockingLabels = Util.getBlockingLabels()
         const blockingKeywords = Util.getBlockingKeywords()
 
+        core.info(`Title: ${title}`)
+        core.info(`Labels: ${labels.join(',')}`)
         core.info(`Blocking labels: ${blockingLabels.join(',')}`)
         core.info(`Blocking keywords: ${blockingKeywords.join(',')}`)
 
