@@ -82,7 +82,7 @@ jobs:
   WIP:
     runs-on: ubuntu-latest
     steps:
-      - uses: wow-actions/wip@v1
+      - uses: WAY29/wip@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
